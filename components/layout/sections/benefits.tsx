@@ -40,15 +40,21 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
-
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            O que é a Maratona Black: Seu Solo Perfeito?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Olá, eu sou o André Nieri! Você, muito provavelmente, já deve ter visto algum anúncio dos meus cursos por aí. Sou professor no Musicians Institute de Los Angeles, vencedor do Guitar Idol e artista da Suhr e Bogner.
+            <br /><br />
+            Com toda essa experiência, percebi que muitos alunos ainda enfrentam dificuldades na hora de improvisar. Por isso, decidi criar uma trilogia de cursos focada em improvisação, onde compartilho técnicas e segredos que transformam solos comuns em verdadeiras obras-primas.
+            <br /><br />
+            E como estamos em novembro, por que não unir o útil ao agradável? Foi aí que pensei em criar a Maratona Black: Seu Solo Perfeito! Neste evento exclusivo de Black Friday antecipada, vou oferecer três aulas ao vivo e gratuitas, onde vou te ensinar tudo o que você precisa saber para alavancar sua improvisação.
+            <br /><br />
+            Ao final das aulas, você terá acesso a um mega cupom de desconto para adquirir a trilogia de cursos que preparei, tudo com um preço que você nunca viu antes! Essa é uma oportunidade única, e tenho certeza de que você vai adorar o que estou preparando.
+            <br /><br />
+            Não há nada igual no Brasil! Junte-se a mim e descubra como aprimorar seus solos de guitarra de forma prática e divertida. Não fique de fora dessa chance de transformar sua música e elevar seu nível como guitarrista.
+            <br /><br />
+            Estou ansioso para te ver na Maratona Black!
           </p>
         </div>
 
