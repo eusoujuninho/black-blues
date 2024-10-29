@@ -56,9 +56,9 @@ function FormComponent() {
 
       // Redireciona após um pequeno atraso
       setTimeout(() => {
-        setLoading(false); // Para o loader antes de redirecionar
+        // setLoading(false); // Para o loader antes de redirecionar
         router.push(process.env.NEXT_PUBLIC_WPP_GROUP_URL || '/');
-      }, 3000); // 2 segundos de atraso para mostrar a mensagem de sucesso
+      }, 2000); // 2 segundos de atraso para mostrar a mensagem de sucesso
 
       // Reseta os campos do formulário após o sucesso
       setFormData({
