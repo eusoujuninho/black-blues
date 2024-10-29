@@ -74,6 +74,7 @@ function FormComponent() {
       setPhone('');
     } else {
       setLoading(false); // Para o loader em caso de erro
+      router.push(process.env.NEXT_PUBLIC_WPP_GROUP_URL || '/');
       toast.error(`Erro durante o cadastro: ${response.error}`, {
         theme: 'dark'
       });
