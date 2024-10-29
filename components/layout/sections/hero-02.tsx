@@ -21,17 +21,17 @@ export const HeroSection02 = () => {
 
           <div className="max-w-screen-md mx-auto text-4xl md:text-6xl font-bold text-left md:text-center">
             <h1>  
-              Você nunca mais vai precisar comprar um <span className="bg-gradient-to-r from-red-600 to-red-400 text-transparent bg-clip-text">curso de improvisação!</span>
+              <span className="bg-gradient-to-r from-red-600 to-red-400 text-transparent bg-clip-text">
+                Desperte sua Expressão Musical
+              </span>: Junte-se à Maratona Black e <span className="underline decoration-red-500 font-bold">Eleve sua Improvisação!</span>
             </h1>
           </div>
 
           <div className="max-w-screen-md mx-auto text-lg md:text-xl font-medium text-left md:text-center">
             <p>
-              Prepare-se para a <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">maior Black Friday antecipada da história!</span>
-              <span className="hidden md:block"><br /></span> {/* Quebra de linha só no desktop */}
-              Antes do grande dia, tenha um test-drive exclusivo:
-              <span className="hidden md:block"><br /></span> {/* Quebra de linha só no desktop */}
-              participe do nosso evento ao vivo com <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">3 aulas gratuitas</span> e descubra os segredos para transformar seus solos de guitarra!
+              Nesta <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">Black November</span>, aproveite a 
+              <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text"> oferta imperdível de 3 cursos pelo preço de 1</span> 
+              e participe de <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">3 aulas ao vivo gratuitas</span> de improvisação!
             </p>
           </div>
 
