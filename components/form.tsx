@@ -2,13 +2,16 @@
 import { Button } from "@/components/ui/button";
 import { toast, ToastContainer } from 'react-toastify';
 import { Input } from "@/components/ui/input";
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { PhoneInput } from "./ui/phone-input";
 import { register } from "@/actions/register.action";
 import { FaWhatsapp } from "react-icons/fa";
+import { useRouter } from 'next/navigation'; // Importando useRouter de next/navigation
 import 'react-international-phone/style.css';
+import { MultiStepLoader } from "@/components/ui/multi-step-loader"; // Ajuste o caminho para o seu loader
 
 function FormComponent() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -21,6 +24,7 @@ function FormComponent() {
   });
 
   const [phone, setPhone] = useState('');
+  const [loading, setLoading] = useState(false); // Estado de carregamento
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(prev => ({
@@ -32,7 +36,6 @@ function FormComponent() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Atualiza o campo mobilePhone com o número do telefone
     setFormData(prev => ({
       ...prev,
       mobilePhone: phone
@@ -42,12 +45,20 @@ function FormComponent() {
     const formDataObj = new FormData(form);
     formDataObj.append('mobile_phone', phone);
 
+    setLoading(true); // Inicia o loader
+
     const response = await register(formDataObj);
 
     if (response.success) {
       toast.success('Cadastro realizado com sucesso!', {
         theme: 'dark'
       });
+
+      // Redireciona após um pequeno atraso
+      setTimeout(() => {
+        setLoading(false); // Para o loader antes de redirecionar
+        router.push(process.env.NEXT_PUBLIC_WPP_GROUP_URL || '/');
+      }, 3000); // 2 segundos de atraso para mostrar a mensagem de sucesso
 
       // Reseta os campos do formulário após o sucesso
       setFormData({
@@ -62,6 +73,7 @@ function FormComponent() {
       });
       setPhone('');
     } else {
+      setLoading(false); // Para o loader em caso de erro
       toast.error(`Erro durante o cadastro: ${response.error}`, {
         theme: 'dark'
       });
@@ -103,6 +115,17 @@ function FormComponent() {
           Entrar no grupo VIP!
         </Button>
       </form>
+      
+      {/* Exibir loader enquanto está carregando */}
+      {loading && (
+        <div className="mt-4 w-full flex justify-center">
+          <MultiStepLoader loadingStates={[
+            { text: "Procurando o melhor grupo para você..." },
+            { text: "Redirecionando para o Grupo Vip!" },
+          ]} loading={loading} duration={2000} />
+        </div>
+      )}
+
       <ToastContainer position="bottom-right" theme="dark" />
     </div>
   );
