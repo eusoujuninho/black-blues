@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
+import { FacebookPixelEvents } from '../components/pixel-events'
 
 export const metadata: Metadata = {
   title: "Maratona Black",
@@ -25,8 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-
           {children}
+
+          <FacebookPixelEvents />
         </ThemeProvider>
       </body>
     </html>

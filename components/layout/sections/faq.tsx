@@ -5,7 +5,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
+
+import Link from 'next/link'
+
 import { Button } from "@/components/ui/button";
+
+import { ArrowRight } from "lucide-react"
 
 interface FAQProps {
   question: string;
@@ -79,14 +85,29 @@ export const FAQSection = () => {
         ))}
       </Accordion>
 
-      <div className="p-20 pb-0 text-center">
-        <Button
-          type="submit"
-          className="w-full bg-green-600 !bg-green-600 hover:bg-green-700 text-white h-14 text-lg font-bold uppercase"
-        >
-          <a href="#hero">QUERO PARTICIPAR!</a>
-        </Button>
-      </div>
+      <div className="p-4 md:p-8 lg:p-12">
+      <Card className="overflow-hidden bg-gradient-to-br from-green-500 to-green-700 text-white shadow-lg">
+        <CardContent className="p-6 sm:p-8 md:p-12 text-center space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            E aí, está esperando o que?
+          </h2>
+          <p className="text-green-100 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+            Toque no botão abaixo e garanta agora sua vaga na Maratona Black!
+          </p>
+        </CardContent>
+        <CardFooter className="p-6 sm:p-8 md:p-12 bg-green-800/20">
+          <Button
+            asChild
+            className="w-full h-14 text-lg font-bold uppercase bg-white text-green-700 hover:bg-green-100 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+          >
+            <Link href="#hero" className="flex items-center justify-center space-x-2">
+              <span>GARANTIR MINHA VAGA AGORA!</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </Button>
+        </CardFooter>
+      </Card>
+    </div>
     </section>
   );
 };

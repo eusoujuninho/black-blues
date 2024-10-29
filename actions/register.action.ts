@@ -6,11 +6,11 @@ export async function register(formData: FormData) {
     const fullNameEntry = formData.get('fullName');
     const fullName = typeof fullNameEntry === 'string' ? fullNameEntry : ''; // Garante que seja uma string
     const userAgent = formData.get('userAgent') || '';
-    const eventType = 'new-lead'; // Extrai eventType
+    const eventType = 'new_lead'; // Extrai eventType
     const eventIdentifier = formData.get('eventIdentifier') || ''; // Extrai eventIdentifier
     const originUrl = formData.get('originUrl') || ''; // Extrai originUrl
     const email = formData.get('email') || ''; // Extrai email
-    const mobilePhone = formData.get('mobilePhone') || ''; // Extrai mobilePhone
+    const mobilePhone = formData.get('mobile_phone') || ''; // Extrai mobilePhone
     const username = formData.get('username') || ''; // Extrai username
 
     // Monta o documento que será inserido no MongoDB
@@ -24,6 +24,9 @@ export async function register(formData: FormData) {
       userAgent: userAgent,
       originUrl: originUrl
     };
+
+    console.log(`form data`, formData);
+    console.log(`document`, document);
 
     // Faz a requisição à API do MongoDB para inserir o documento
     const response = await fetch('https://sa-east-1.aws.data.mongodb-api.com/app/data-giwjuic/endpoint/data/v1/action/insertOne', {
