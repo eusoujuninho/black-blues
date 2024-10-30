@@ -3,9 +3,9 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-international-phone/style.css';
-import Form from "@/components/form";
+import Form from "@/components/form-no-loader";
 
-export const HeroSection02 = () => {
+export const HeroSection = () => {
   return (
     <section className="container w-full" id="hero">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
@@ -30,7 +30,7 @@ export const HeroSection02 = () => {
           <div className="max-w-screen-md mx-auto text-lg md:text-xl font-medium text-left md:text-center">
             <p>
               Nesta <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">Black November</span>, aproveite a 
-              <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text"> oferta imperdível de 3 cursos pelo preço de 1 </span>  
+              <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text"> oferta imperdível de 3 cursos pelo preço de 1</span> 
                e participe de <span className="bg-gradient-to-r from-red-500 to-red-300 text-transparent bg-clip-text">3 aulas ao vivo gratuitas</span> de improvisação!
             </p>
           </div>
