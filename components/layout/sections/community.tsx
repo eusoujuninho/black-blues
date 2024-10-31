@@ -33,7 +33,7 @@ export const CommunitySection = () => {
               <br />
 
               <p>
-                Meu nome é Artur Menezes e como vencedor do concurso da <strong>Blues Foundation</strong> (Gibson/Albert King) em 2018 e professor no <strong>Musicians Institute de Los Angeles</strong>, tive a honra de compartilhar o palco com grandes nomes do gênero, como <strong>Joe Bonamassa</strong> e <strong>Buddy Guy</strong>. Com isso, aprendi que o Blues é muito mais do que técnica ou 'fórmulas mágicas'; trata-se de tocar cada nota com emoção e sentir a música.
+                Meu nome é Artur Menezes e como vencedor do concurso da <strong>Blues Foundation</strong> (Gibson/Albert King) em 2018 e professor no <strong>Musicians Institute de Los Angeles</strong>, tive a honra de compartilhar o palco com grandes nomes do gênero, como <strong>Joe Bonamassa</strong> e <strong>Buddy Guy</strong>. Com isso, aprendi que o Blues é muito mais do que técnica ou &lsquo;fórmulas mágicas&rsquo;; trata-se de tocar cada nota com emoção e sentir a música.
               </p>
 
               <br />
