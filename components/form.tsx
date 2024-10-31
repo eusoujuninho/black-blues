@@ -17,7 +17,7 @@ function FormComponent() {
     email: '',
     userAgent: '',
     eventType: 'new_lead',
-    eventIdentifier: 'maratona_black_ptbr',
+    eventIdentifier: 'black_blues_ptbr',
     originUrl: '',
     queryParams: {},
     mobilePhone: ''
@@ -66,7 +66,7 @@ function FormComponent() {
         email: '',
         userAgent: '',
         eventType: 'new_lead',
-        eventIdentifier: 'maratona_black_ptbr',
+        eventIdentifier: 'black_blues_ptbr',
         originUrl: '',
         queryParams: {},
         mobilePhone: ''
