@@ -17,7 +17,7 @@ function FormComponent() {
     email: '',
     userAgent: '',
     eventType: 'new_lead',
-    eventIdentifier: 'black_blues_ptbr',
+    eventIdentifier: 'black_november_blues_ptbr',
     originUrl: '',
     queryParams: {},
     mobilePhone: ''
@@ -66,7 +66,7 @@ function FormComponent() {
         email: '',
         userAgent: '',
         eventType: 'new_lead',
-        eventIdentifier: 'black_blues_ptbr',
+        eventIdentifier: 'black_november_blues_ptbr',
         originUrl: '',
         queryParams: {},
         mobilePhone: ''
