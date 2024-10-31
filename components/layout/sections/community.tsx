@@ -27,13 +27,13 @@ export const CommunitySection = () => {
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
               <p>
-                Se você ama Blues, tenho uma oportunidade incrível para você. Estou lançando o <strong>Black November do Blues</strong>, um evento exclusivo onde vou compartilhar conhecimentos e técnicas para aprimorar sua forma de tocar.
+                Antes de te explicar, permita-me apresentar...
               </p>
 
               <br />
 
               <p>
-                Como vencedor do concurso da <strong>Blues Foundation</strong> (Gibson/Albert King) em 2018 e professor no <strong>Musicians Institute de Los Angeles</strong>, tive a honra de compartilhar o palco com grandes nomes do gênero, como <strong>Joe Bonamassa</strong> e <strong>Buddy Guy</strong>. Com isso, aprendi que o Blues é muito mais do que técnica; trata-se de tocar cada nota com emoção e sentir a música.
+                Meu nome é Artur Menezes e como vencedor do concurso da <strong>Blues Foundation</strong> (Gibson/Albert King) em 2018 e professor no <strong>Musicians Institute de Los Angeles</strong>, tive a honra de compartilhar o palco com grandes nomes do gênero, como <strong>Joe Bonamassa</strong> e <strong>Buddy Guy</strong>. Com isso, aprendi que o Blues é muito mais do que técnica ou 'fórmulas mágicas'; trata-se de tocar cada nota com emoção e sentir a música.
               </p>
 
               <br />

@@ -17,9 +17,9 @@ export const HeroSection = () => {
 
           <div className="max-w-screen-md mx-auto text-lg md:text-xl font-medium text-left md:text-center text-gray-800 font-pangolin">
             <p>
-               <span className="font-bold">Não perca a maior e melhor BLACK NOVEMBER voltada para amantes de Blues!</span>
+               <span className="font-bold">Você terá acesso à <strong>TODOS OS CURSOS POR UM ÚNICO PREÇO!</strong></span>
                <br />
-              <span>Participe de um evento ao vivo com <span className="text-purple-500">3 aulas gratuitas</span> e aprenda a tocar com alma e emoção!</span>
+              <span>Participe de um evento ao vivo com <span className="text-purple-500 font-bold">3 aulas gratuitas</span> e aprenda a tocar com alma e emoção!</span>
             </p>
           </div>
 
