@@ -49,52 +49,35 @@ export const TeamSection = () => {
                 </h2>
 
                 <p className="text-lg leading-relaxed text-gray-300 sm:text-xl md:text-2xl">
-                  Você vai aprender com um dos professores titulares do{" "}
-                  <span className="font-semibold text-white">
-                    Musicians Institute
-                  </span>
-                  !
+                  Você vai aprender com um dos grandes nomes da nova geração do Blues mundial!
                 </p>
 
                 <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
-                  André Nieri é um guitarrista profissional com mais de duas
-                  décadas de experiência. Ele é graduado em um renomado
-                  Conservatório de Tatuí e professor no Musicians Institute em
-                  Los Angeles, EUA. André foi vencedor de vários concursos
-                  internacionais de guitarra, incluindo o Guitar Idol 2014 em
-                  Londres, onde conquistou o primeiro lugar com uma composição
-                  autoral.
+                  Artur Menezes é um guitarrista talentoso que vem se destacando na cena do blues desde seu álbum de estreia, lançado em 2010. Seu estilo é uma mistura envolvente de blues tradicional e hard rock, com uma habilidade impressionante para alternar entre grooves de jazz.
                 </p>
 
                 <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
-                  Ele é o criador de diversos cursos de guitarra que já participaram da evolução de 
-                  mais de 20 mil alunos ao redor do mundo.
+                  Com suas raízes brasileiras, Artur traz um toque único à sua música, que se diferencia de seus contemporâneos. Suas composições transitam entre o blues direto e influências do funk, e sua voz consegue transmitir a carga emocional de suas letras com a mesma eficácia que sua guitarra.
                 </p>
 
                 <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
-                  André dedica grande parte do seu tempo para criar e
-                  disponibilizar materiais constantes e um aprendizado
-                  diferenciado, oferecendo suporte aos seus alunos.
+                  Seu álbum mais recente, **Fading Away**, produzido por Josh Smith e com a participação especial de Joe Bonamassa, marca um avanço significativo em sua carreira, reafirmando sua posição entre os novos ícones da guitarra blues.
                 </p>
 
                 <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
-                  Além disso, nos últimos 10 anos, André tem acompanhado o
-                  genial baterista{" "}
-                  <span className="font-semibold text-white">Virgil Donati</span>{" "}
-                  (Planet X, Steve Vai) em suas turnês pelo mundo, tocando em
-                  seu trio instrumental e ministrando clínicas e workshops.
+                  Baseado em Los Angeles, Artur tem realizado turnês pelos Estados Unidos com frequência. Quando não está se apresentando, tem compartilhado o palco com grandes nomes como Buddy Guy, Kenny Wayne Shepherd, Eric Gales e Kingfish. Ele também faz turnês pela Europa e Brasil anualmente.
                 </p>
 
                 <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
-                  Com toda essa experiência, André teve a oportunidade de
-                  compartilhar o palco, viagens e muitos cafés com os melhores
-                  guitarristas do mundo, absorvendo conhecimento valioso de
-                  todas essas experiências. E muitos desses conselhos são parte
-                  do conteúdo que você encontra aqui na{" "}
-                  <span className="font-semibold text-white">
-                    Maratona Black
-                  </span>
-                  !
+                  Nos últimos dois anos, Artur percorreu a Europa e a América do Sul, tocando em festivais e clubes em diversos países. Ele foi premiado pelo Gibson/Albert King como Melhor Guitarrista pela Blues Foundation e ficou em 3º lugar no **International Blues Challenge** em Memphis em 2018.
+                </p>
+
+                <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
+                  Como educador, Artur ensina guitarra no **Musicians Institute** em Hollywood, CA, e tem cursos online e masterclasses com plataformas como TrueFire, JamPlay, JTC e Pickup Music. Ele também é um dos fundadores da **Casa do Blues**, que promove shows semanais gratuitos, workshops e palestras sobre o blues.
+                </p>
+
+                <p className="mt-6 text-base text-gray-400 md:text-lg lg:text-xl leading-relaxed">
+                  Artur já foi palestrante em eventos TEDx e, com toda essa experiência, traz um conhecimento valioso que você poderá aproveitar nas aulas.
                 </p>
               </div>
             </main>
@@ -102,11 +85,11 @@ export const TeamSection = () => {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <Image
-            className="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/nieri.webp"
-            alt="Team member"
-            width={720}
-            height={960}
+            className="w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="/artur.png"
+            alt="Artur Menezes"
+            width={1372}
+            height={890}
           />
         </div>
       </div>

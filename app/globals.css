@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif !important;
 }
 
 /* *=========== Default theme =========== */
@@ -169,3 +175,65 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+
+.pangolin-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hero {
+  position: relative; /* Define o contexto de posicionamento para o pseudo-elemento */
+  background-image: url('/wpaper.jpg'); /* Imagem de fundo */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-position: center; /* Centraliza a imagem */
+  background-size: cover; /* Cobre toda a área do elemento */
+  background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+  display: flex; /* Usar flexbox para centralizar conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 20px; /* Adiciona espaçamento interno */
+  color: #333; /* Cor do texto padrão */
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Adicionando um filtro para dar um toque vintage */
+#hero::before {
+  content: "";
+  position: absolute; /* Mantém o pseudo-elemento dentro do contexto do pai */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8); /* Camada branca translúcida para suavizar a imagem */
+  z-index: 0; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+/* Estilos para o conteúdo dentro da seção */
+#hero > * {
+  position: relative; /* Permite que o conteúdo fique acima do pseudo-elemento */
+  z-index: 1; /* Garante que o conteúdo fique acima da camada de fundo */
+}
+
+
+
+#community {
+  z-index: 999999 !important;
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pangolin-regular {
+  font-family: "Pangolin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+

@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background dark", inter.className)}>
+      <body className={cn("min-h-screen bg-background dark", inter.className, "pangolin-regular")}>
         {children}
       </body>
     </html>
