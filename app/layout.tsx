@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Maratona Black",
-  description: "Maratona Black - Seu solo perfeito!",
+  title: "Black November do Blues",
+  description: "Black November do Blues - Pague 1, leve todos!!",
 };
 
 export default function RootLayout({

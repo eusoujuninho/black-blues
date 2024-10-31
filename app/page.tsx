@@ -5,8 +5,8 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { TeamSection } from "@/components/layout/sections/team";
 
 export const metadata = {
-  title: "Maratona Black - Seu solo perfeito!",
-  description: "Maratona Black - Seu solo perfeito!"
+  title: "Black November do Blues - Pague 1, leve todos!!",
+  description: "Black November do Blues - Pague 1, leve todos!!"
 };
 
 export default function Home() {

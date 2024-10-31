@@ -16,14 +16,14 @@ export const HeroSection = () => {
             width={160}
             height={120}
             src="/logo.png"
-            alt="Maratona Black"
+            alt="Black November do Blues"
           />
 
           <div className="max-w-screen-md mx-auto text-4xl md:text-6xl font-bold text-left md:text-center">
             <h1>  
               <span className="bg-gradient-to-r from-red-600 to-red-400 text-transparent bg-clip-text">
                 Desperte sua Expressão Musical
-              </span>: Junte-se à Maratona Black e <span className="underline decoration-red-500 font-bold">Eleve sua Improvisação!</span>
+              </span>: Junte-se à Black November do Blues e <span className="underline decoration-red-500 font-bold">Eleve sua Improvisação!</span>
             </h1>
           </div>
 

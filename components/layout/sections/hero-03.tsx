@@ -16,7 +16,7 @@ export const HeroSection = () => {
             width={160}
             height={120}
             src="/logo.png"
-            alt="Maratona Black"
+            alt="Black November do Blues"
           />
 
           <div className="max-w-screen-md mx-auto text-4xl md:text-6xl font-bold text-left md:text-center">
