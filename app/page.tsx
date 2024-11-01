@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import FacebookPixel from 'react-facebook-pixel';
 import { CommunitySection } from "@/components/layout/sections/community";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FooterSection } from "@/components/layout/sections/footer";
@@ -10,6 +12,19 @@ export const metadata = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    const options = {
+      autoConfig: true, // Ativa a configuração automática
+      debug: false, // Ativa o modo debug
+    };
+
+    // Inicializa o Pixel com o ID fornecido
+    FacebookPixel.init('464356528846076');
+
+    // Rastreia a visualização da página
+    FacebookPixel.pageView();
+  }, []);
+
   return (
     <>
       <HeroSection />
