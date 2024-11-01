@@ -9,7 +9,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useRouter } from 'next/navigation'; // Importando useRouter de next/navigation
 import 'react-international-phone/style.css';
 import { MultiStepLoader } from "@/components/ui/multi-step-loader"; // Ajuste o caminho para o seu loader
-import ReactPixel from 'react-facebook-pixel'; // Importando o ReactPixel
 
 function FormComponent() {
   const router = useRouter();
@@ -51,14 +50,6 @@ function FormComponent() {
     const response = await register(formDataObj);
 
     if (response.success) {
-      // Envia o evento de lead para o Facebook Pixel
-      ReactPixel.track('Lead', {
-        content_name: formData.eventIdentifier,
-        content_category: formData.eventType,
-        value: 1.00,
-        currency: 'BRL',
-      });
-
       toast.success('Cadastro realizado com sucesso!', {
         theme: 'dark'
       });
