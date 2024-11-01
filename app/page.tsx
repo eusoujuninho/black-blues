@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
-import FacebookPixel from 'react-facebook-pixel';
 import { CommunitySection } from "@/components/layout/sections/community";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { TeamSection } from "@/components/layout/sections/team";
+import FacebookPixel from "./facebook-pixel";
 
 export const metadata = {
   title: "Black November do Blues - Pague 1, leve todos!!",
@@ -12,21 +11,9 @@ export const metadata = {
 };
 
 export default function Home() {
-  useEffect(() => {
-    const options = {
-      autoConfig: true, // Ativa a configuração automática
-      debug: false, // Ativa o modo debug
-    };
-
-    // Inicializa o Pixel com o ID fornecido
-    FacebookPixel.init('464356528846076');
-
-    // Rastreia a visualização da página
-    FacebookPixel.pageView();
-  }, []);
-
   return (
     <>
+      <FacebookPixel />
       <HeroSection />
       <CommunitySection />
       <TeamSection />
